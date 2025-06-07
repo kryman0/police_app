@@ -1,0 +1,31 @@
+.input {
+    font-size: 100%;
+    line-height: 1.5;
+    font-family: "Lato", sans-serif;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 0.2rem;
+    padding: 0.6rem;
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 1.4rem;
+}
+
+.input-label {
+    font-weight: bold;
+    margin: 2rem 0 0;
+    display: block;
+}
+
+.input-label:first-of-type {
+    margin: 1rem 0 0;
+}
+
+.input-label::after {
+    content: ":";
+}
+
+.textarea-delivery {
+    width: 200px;
+    height: 70px;
+}

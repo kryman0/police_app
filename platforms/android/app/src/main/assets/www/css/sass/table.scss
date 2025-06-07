@@ -1,0 +1,80 @@
+/*
+* Style for delivery table.
+*/
+.delivery-table {
+    width: 100%;
+    margin-bottom: 40px;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+.delivery-table th,
+.delivery-table td {
+    padding: 5px;
+    text-align: left;
+    border: 1px solid black;
+}
+
+
+/*
+* Style for police table.
+*/
+.police-table.services {
+    display: block;
+}
+
+.police-table.url {
+    white-space: normal;
+}
+
+.police-table.gps-link {
+    cursor: pointer;
+    background-color: #0511F2;
+    color: #fff;
+}
+
+.police-id {
+    /* background-color: #0019b0; */
+    border-style: solid;
+    border-width: 0 5px;
+    border-color: #0511F2;
+}
+
+
+.table {
+    width: 100%;
+    // Not covering full width of page if this (below) is commented out.
+    // display: block;
+    overflow-x: auto;
+    border-collapse: collapse;
+
+    tbody {
+        tr:hover { background-color: lavender; }
+    }
+
+    th { text-align: left; }
+
+    // td { border-top: 1px solid #ccc; }
+
+    // Commented out due to text displaying on one full line.
+    // th,
+    // td {
+    //     white-space: nowrap;
+    // }
+
+    .number-cell { text-align: right; }
+}
+
+// Commented out due to not working correctly with the total width
+// of the table and scrolling vertically makes text disappear.
+// .table-scroll {
+//     width: 100%;
+//     display: block;
+//     overflow-x: auto;
+// }
+
+.table-striped {
+    tr:nth-of-type(2n) {
+        background-color: #eee;
+    }
+}

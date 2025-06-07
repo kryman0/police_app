@@ -1,0 +1,35 @@
+/*
+* Style for base css with imports.
+*/
+
+@import "../normalize.min.scss";
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+    line-height: 1.5rem;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    padding: 10px 5px;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 4.5rem;
+}
+
+@import "./animation";
+@import "./header";
+@import "./misc";
+@import "./button";
+@import "./table";
+@import "./input";
+@import "./image";
+@import "./media_queries";

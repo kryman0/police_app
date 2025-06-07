@@ -1,0 +1,20 @@
+/*
+* Style for miscellaneous things.
+*/
+.material-icons:hover {
+  cursor: pointer;
+}
+
+a.active,
+a:visited.active {
+  color: red;
+  border-bottom: 3px dotted silver;
+}
+
+.pointer:hover {
+  cursor: pointer;
+}
+
+#map {
+    height: 20rem;
+}

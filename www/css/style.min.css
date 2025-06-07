@@ -1,0 +1,711 @@
+/*
+* Style for base css with imports.
+*/
+/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  line-height: 1.5rem;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  padding: 10px 5px;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 4.5rem;
+}
+
+@keyframes moveFromLeft {
+  from {
+    transform: translateX(-100%);
+  }
+}
+@keyframes moveToLeft {
+  to {
+    transform: translateX(70%);
+  }
+}
+.slide-in {
+  animation: moveFromLeft 0.5s ease both;
+}
+
+.slide-out {
+  animation: moveToLeft 0.5s ease both;
+}
+
+header {
+  margin-bottom: 5rem;
+}
+
+.top_nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+}
+
+.top_nav a,
+.top_nav a:visited {
+  display: inline-block;
+  margin: 0 20px;
+  color: #0511F2;
+}
+
+.top_nav .menu-icon {
+  display: none;
+}
+
+.menu_nav_title {
+  display: none;
+}
+
+/*
+* Style for miscellaneous things.
+*/
+.material-icons:hover {
+  cursor: pointer;
+}
+
+a.active,
+a:visited.active {
+  color: red;
+  border-bottom: 3px dotted silver;
+}
+
+.pointer:hover {
+  cursor: pointer;
+}
+
+#map {
+  height: 20rem;
+}
+
+.button {
+  width: 100%;
+  padding: 0.4rem 1rem;
+  color: #333;
+  background-color: #fff;
+  background-image: linear-gradient(#eee, #6788aa);
+  border: 1px solid #ccc;
+  border-radius: 0.2rem;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+.button a,
+.button a:visited {
+  display: inline-block;
+  width: 100%;
+  text-decoration: none;
+  color: inherit;
+  cursor: default;
+}
+
+.button:hover {
+  background-color: #ddd;
+  background-image: none;
+}
+
+.button:active {
+  background-color: #dcdcdc;
+  background-image: none;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.blue-button {
+  color: #fff;
+  background-color: #0511F2;
+  background-image: linear-gradient(#0511F2, #4C81A8);
+  border-color: #0037ff;
+}
+
+.blue-button:hover {
+  background-color: #4300F5;
+  background-image: none;
+}
+
+.blue-button:active {
+  background-color: #002ac041;
+  background-image: none;
+  box-shadow: inset 0 2px 4px #435097;
+}
+
+.green-button {
+  color: #fff;
+  background-color: green;
+  background-image: linear-gradient(lightgreen, darkgreen);
+  border-color: #206020;
+}
+
+.green-button:hover {
+  background-color: green;
+  background-image: none;
+}
+
+.green-button:active {
+  background-color: green;
+  background-image: none;
+  box-shadow: inset 0 2px 4px darkgreen;
+}
+
+/*
+* Style for delivery table.
+*/
+.delivery-table {
+  width: 100%;
+  margin-bottom: 40px;
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+.delivery-table th,
+.delivery-table td {
+  padding: 5px;
+  text-align: left;
+  border: 1px solid black;
+}
+
+/*
+* Style for police table.
+*/
+.police-table.services {
+  display: block;
+}
+
+.police-table.url {
+  white-space: normal;
+}
+
+.police-table.gps-link {
+  cursor: pointer;
+  background-color: #0511F2;
+  color: #fff;
+}
+
+.police-id {
+  /* background-color: #0019b0; */
+  border-style: solid;
+  border-width: 0 5px;
+  border-color: #0511F2;
+}
+
+.table {
+  width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+}
+.table tbody tr:hover {
+  background-color: lavender;
+}
+.table th {
+  text-align: left;
+}
+.table .number-cell {
+  text-align: right;
+}
+
+.table-striped tr:nth-of-type(2n) {
+  background-color: #eee;
+}
+
+.input {
+  font-size: 100%;
+  line-height: 1.5;
+  font-family: "Lato", sans-serif;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 0.2rem;
+  padding: 0.6rem;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 1.4rem;
+}
+
+.input-label {
+  font-weight: bold;
+  margin: 2rem 0 0;
+  display: block;
+}
+
+.input-label:first-of-type {
+  margin: 1rem 0 0;
+}
+
+.input-label::after {
+  content: ":";
+}
+
+.textarea-delivery {
+  width: 200px;
+  height: 70px;
+}
+
+/*
+* Style for images.
+*/
+.police-logo {
+  margin: 0 auto;
+  text-align: center;
+}
+.police-logo img {
+  display: block;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 668px) {
+  .input {
+    width: 100%;
+  }
+
+  .table-stacked tr {
+    display: block;
+  }
+  .table-stacked thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  .table-stacked tbody {
+    display: block;
+  }
+  .table-stacked td {
+    display: block;
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+    white-space: normal;
+    text-align: right;
+    margin-right: 0.33rem;
+  }
+  .table-stacked td::before {
+    content: attr(data-title);
+    position: absolute;
+    top: 0.33rem;
+    left: 0.33rem;
+    width: 45%;
+    padding-right: 0.55rem;
+    white-space: nowrap;
+    text-align: left;
+    font-weight: bold;
+  }
+
+  .top_nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 2.5rem;
+    background-color: #6200ee;
+    color: #fff;
+  }
+
+  .top_nav a {
+    display: none;
+    width: 100%;
+    border-bottom: 10px solid #ccc;
+    text-align: left;
+  }
+
+  .top_nav_mobile_menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    background-color: #6200ee;
+    color: #fff;
+    z-index: 1;
+  }
+
+  .top_nav_mobile_menu a {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    color: #fff;
+  }
+
+  .top_nav_mobile_menu a.active {
+    color: red;
+  }
+
+  .top_nav_mobile_menu a:nth-child(3) {
+    margin-top: 3rem;
+  }
+
+  .top_nav_mobile_menu a:last-child {
+    margin-bottom: 0;
+  }
+
+  .top_nav .menu-icon,
+.top_nav_mobile_menu .menu-icon {
+    position: fixed;
+    top: 0.5rem;
+    left: 0;
+    display: block;
+    border: none;
+    color: white;
+  }
+
+  .menu_nav_title {
+    position: fixed;
+    top: 0.5rem;
+    left: 30px;
+    display: inline-block;
+    margin-left: 5rem;
+    font-size: 1.3rem;
+  }
+
+  .police-table.url {
+    word-break: break-word;
+  }
+}
+
+/*# sourceMappingURL=style.min.css.map */

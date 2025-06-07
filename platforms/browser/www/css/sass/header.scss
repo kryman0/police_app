@@ -1,0 +1,27 @@
+header {
+  margin-bottom: 5rem;
+}
+
+.top_nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+}
+
+.top_nav a,
+.top_nav a:visited {
+  display: inline-block;
+  margin: 0 20px;
+  color: #0511F2;
+}
+
+.top_nav .menu-icon {
+    display: none;
+}
+
+.menu_nav_title {
+    display: none;
+}
